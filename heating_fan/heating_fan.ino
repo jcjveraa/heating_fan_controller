@@ -20,15 +20,6 @@
 ESP8266WebServer server(80);
 ESP8266HTTPUpdateServer httpUpdater;
 
-#define MODE_LISTEN_MASTER 0
-#define MODE_LISTEN_SLAVE 1
-uint_least8_t mode = MODE_LISTEN_MASTER;
-
-bool openthermActive = true;
-
-byte CH_SETPOINT_HB_OVERRIDE = 0;
-// const char *CH_SETPOINT_OVERRIDE_TOPIC = "iot/boiler/overrides/CH_SETPOINT";
-
 #if TESTMODE
 WiFiServer telnet_server(999);
 WiFiClient client;

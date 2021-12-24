@@ -15,7 +15,7 @@ Ticker wifiReconnectTimer;
 void connectToWifi()
 {
     WiFi.mode(WIFI_STA);
-    WiFi.begin(SSID_1, PASSWORD_1);
+    WiFi.begin(SSID_2, PASSWORD_2);
     while (WiFi.status() != WL_CONNECTED)
     {
         delay(500);
